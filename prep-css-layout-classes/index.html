@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Layout Classes</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+    /* stylelint-disable block-no-empty */
+    body {
+      font-family: sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .container {
+      max-width: 992px;
+      margin: auto;
+    }
+
+    .row {
+      width: 100%;
+      display: flex;
+    }
+
+    .column {
+      flex-basis: calc(100%/3);
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+
+    img{
+      width: 100%;
+    }
+
+    h3{
+      display: flex;
+      color:darkblue;
+      align-items: center;
+      justify-content: center;
+      font-size: 50px;
+    }
+
+    h4{
+      color:blue;
+      display: flex;
+      justify-content: center;
+    }
+
+    span{
+      color:red;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <h3>Indiana Jones</h3>
+
+  <!-- Complete the HTML here -->
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <img src="images\crusade.jpg">
+        <h4>The Last Crusade</h4>
+        <p> I have never seen an <span>Indiana Jones</span> movie.
+            Please pretend this is a very discriptive and full of
+            imageries that describe how from this <span>Indiana Jones</span> movie is.
+        </p>
+      </div>
+      <div class="column">
+        <img src="images/raiders.jpg">
+        <h4>Raiders of the Lost Ark</h4>
+        <p> I have never seen an <span>Indiana Jones</span> movie.
+            Please pretend this is a very discriptive and full of
+            imageries that describe how from this <span>Indiana Jones</span> movie is.
+        </p>
+      </div>
+      <div class="column">
+        <img src="images/temple.jpg">
+        <h4>Temple of Doom</h4>
+        <p> I have never seen an <span>Indiana Jones</span> movie.
+            Please pretend this is a very discriptive and full of
+            imageries that describe how from this <span>Indiana Jones</span> movie is.
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
